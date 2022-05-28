@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%); 
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+    --font1: 'Big Shoulders Display', cursive;
+    --font2: 'Lexend Deca', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    display: grid;
+    place-items: center;
+    margin-top: 10em;
+    /* background-color: blue; */
+}
+.container {
+    /* background-color: blanchedalmond; */
+    margin: auto 5em;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex1, .flex2, .flex3 {
+    margin: 1.7em;
+    width: 14em;
+}
+#section1 {
+    background-color: var(--Bright-orange);
+    border-radius: .5em 0 0 .5em;
+}
+#section2 {
+    background-color: var(--Dark-cyan);
+}
+#section3 {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 .5em .5em 0;
+}
+.heading {
+    margin: 1em auto;
+    text-transform: uppercase;
+    font-family: var(--font1);
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+.content {
+    color: var(--Transparent-white-paragraphs);
+    margin: 1.3em auto;
+    font-family: var(--font2);
+    font-size: 15px;
+}
+input[type=submit] {
+    margin-top: 2.5em;
+    padding: .8em;
+    border-radius: 1.5em;
+    width: 9.3em;
+    border: none;
+    color: var(--Bright-orange);
+    font-family: var(--font2);
+    background-color: var(--Very-light-gray-background-headings-buttons);
+}
+input[type=submit]:hover {
+    background-color: var(--Bright-orange);
+    outline: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+.button2 > input {
+    color: var(--Dark-cyan);
+}
+.button2 > input:hover {
+    background-color: var(--Dark-cyan);
+    color: white;
+    outline: 2px solid white;
+    cursor: pointer;
+}
+.button3 > input {
+    color: var(--Very-dark-cyan)
+}
+.button3 > input:hover {
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    outline: 2px solid white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    .wrapper {
+        width: 375px;
+        flex-direction: column;
+    }
+    #section1 {
+        background-color: var(--Bright-orange);
+        border-radius: .5em .5em 0 0;
+    }    
+    #section3 {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 .5em .5em;
+    }
+}
+@media screen and (max-width: 700px) {
+    .wrapper {
+        width: 700px;
+        flex-direction: column;
+    }
+
+    #section1 {
+        background-color: var(--Bright-orange);
+        border-radius: .5em .5em 0 0;
+    }
+
+    #section3 {
+        background-color: var(--Very-dark-cyan);
+        border-radius: 0 0 .5em .5em;
+    }
+}
