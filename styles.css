@@ -102,7 +102,7 @@ input[type=submit]:hover {
         margin: 0;
     }
     .wrapper {
-        /* width: 375px; */
+        width: 375px;
         flex-direction: column;
     }
     #section1 {
@@ -122,6 +122,7 @@ input[type=submit]:hover {
         margin: 0;
     }
     .wrapper {
+        width: 375px;
         flex-direction: column;
     }
 
