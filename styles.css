@@ -91,10 +91,6 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 375px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
     main {
         margin-top: 2em;
     }
@@ -111,12 +107,6 @@ input[type=submit]:hover {
     #section3 {
     background-color: var(--Very-dark-cyan);
     border-radius: 0 0 .5em .5em;
-    }
-    input[type=submit] {
-        margin: 0;
-        padding: .8em;
-        border-radius: 1.5em;
-        width: 9.3em;
     }
 }
 @media screen and (max-width: 600px) {
@@ -139,10 +129,5 @@ input[type=submit]:hover {
         background-color: var(--Very-dark-cyan);
         border-radius: 0 0 .5em .5em;
     }
-    input[type=submit] {
-        margin: 0;
-        padding: .8em;
-        border-radius: 1.5em;
-        width: 9.3em;
-        }
+    
 }
