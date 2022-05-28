@@ -30,7 +30,7 @@ main {
 }
 .flex1, .flex2, .flex3 {
     margin: 1.7em;
-    width: 14em;
+    width: 13.2em;
 }
 #section1 {
     background-color: var(--Bright-orange);
